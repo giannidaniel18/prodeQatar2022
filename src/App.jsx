@@ -9,7 +9,15 @@ function App() {
 
   const buildPredicitons = (matchPrediction) => {
     const newMatchPrediction = matchPrediction;
-    setPredictionArray([...predictionArray, newMatchPrediction]);
+    // const index = predictionArray.map((i) => i.match).indexOf(newMatchPrediction.match);
+    const index = predictionArray.findIndex((prediction) => prediction.match === matchPrediction.match);
+    console.log(index);
+    if (index === -1) {
+      setPredictionArray([...predictionArray, newMatchPrediction]);
+    } else {
+      predictionArray.splice(index, 1, newMatchPrediction);
+    }
+    console.log(predictionArray);
   };
 
   return (
@@ -22,8 +30,8 @@ function App() {
             {grupo.enfrentamientos.map((enfrentamiento) => (
               <Stack key={enfrentamiento.id}>
                 <Enfrentamiento
-                  hora="18:00"
-                  fecha="22/11/2022"
+                  hora={enfrentamiento.horario}
+                  fecha={enfrentamiento.fecha}
                   local={enfrentamiento.local}
                   visitante={enfrentamiento.visitante}
                   matchId={enfrentamiento.id}
