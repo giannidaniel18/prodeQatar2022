@@ -7,3 +7,4 @@ TODO
 - Agregar banderas a los países []
 - Ubicar la fecha en el componente enfrentamiento []
 - Alinear todas las banderas para que comiencen en el mismo pixel en responisve []
+  https://github.com/hampusborgos/country-flags/tree/main/png250px
