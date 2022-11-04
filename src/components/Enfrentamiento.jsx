@@ -10,7 +10,11 @@ const Enfrentamiento = memo(({ hora, local, visitante, matchId, getMatchPredicti
     getMatchPrediction(matchPrediction);
   };
   return (
-    <Stack direction={{ base: "column", md: "row" }} justifyContent={{ base: "center" }} alignItems={{ base: "start", md: "center" }}>
+    <Stack
+      direction={{ base: "column", md: "row" }}
+      justifyContent={{ base: "center" }}
+      alignItems={{ base: "start", md: "center" }}
+    >
       <Box p={2}>
         <Text fontSize={30}>{hora}</Text>
       </Box>
@@ -19,13 +23,21 @@ const Enfrentamiento = memo(({ hora, local, visitante, matchId, getMatchPredicti
         w="100%"
         alignItems={{ base: "center", md: undefined }}
         justifyContent={{ base: undefined, md: "center" }}
-        gap={10}
+        gap={{ base: 5, md: 10 }}
       >
-        <EquipoBox equipo={local} tipo={"local"} />
-        <Bandera />
+        <Stack
+          alignItems={{ base: "center" }}
+          direction={{ base: "row-reverse", md: "row" }}
+          textAlign={{ base: "start", md: "end" }}
+        >
+          <EquipoBox equipo={local} />
+          <Bandera />
+        </Stack>
         <ResultPicker predictionFunction={handlePrediction} />
-        <Bandera />
-        <EquipoBox equipo={visitante} tipo={"visitante"} />
+        <Stack direction={{ base: "row" }}>
+          <Bandera />
+          <EquipoBox equipo={visitante} />
+        </Stack>
       </Stack>
     </Stack>
   );
