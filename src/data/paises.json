@@ -1,0 +1,162 @@
+[
+    {
+        "id": "01_GA",
+        "name": "Qatar",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/qa.png?raw=true"
+    },
+    {
+        "id": "02_GA",
+        "name": "Ecuador",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ec.png?raw=true"
+    },
+    {
+        "id": "03_GA",
+        "name": "Senegal",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/sn.png?raw=true"
+    },
+    {
+        "id": "04_GA",
+        "name": "P. Bajos",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/nl.png?raw=true"
+    },
+    {
+        "id": "01_GB",
+        "name": "Inglaterra",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/gb-eng.png?raw=true"
+    },
+    {
+        "id": "02_GB",
+        "name": "Iran",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ir.png?raw=true"
+    },
+    {
+        "id": "03_GB",
+        "name": "EEUU",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/us.png?raw=true"
+    },
+    {
+        "id": "04_GB",
+        "name": "Gales",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/gb-wls.png?raw=true"
+    },
+    {
+        "id": "01_GC",
+        "name": "Argentina",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ar.png?raw=true"
+    },
+    {
+        "id": "02_GC",
+        "name": "Arabia Saudita",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/sa.png?raw=true"
+    },
+    {
+        "id": "03_GC",
+        "name": "Mexico",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/mx.png?raw=true"
+    },
+    {
+        "id": "04_GC",
+        "name": "Polonia",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/pl.png?raw=true"
+    },
+    {
+        "id": "01_GD",
+        "name": "Francia",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/fr.png?raw=true"
+    },
+    {
+        "id": "02_GD",
+        "name": "Australia",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/au.png?raw=true"
+    },
+    {
+        "id": "03_GD",
+        "name": "Dinamarca",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/dk.png?raw=true"
+    },
+    {
+        "id": "04_GD",
+        "name": "Tunez",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/tn.png?raw=true"
+    },
+    {
+        "id": "01_GE",
+        "name": "España",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/es.png?raw=true"
+    },
+    {
+        "id": "02_GE",
+        "name": "Costa Rica",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/cr.png?raw=true"
+    },
+    {
+        "id": "03_GE",
+        "name": "Alemania",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/de.png?raw=true"
+    },
+    {
+        "id": "04_GE",
+        "name": "Japon",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/jp.png?raw=true"
+    },
+    {
+        "id": "01_GF",
+        "name": "Belgica",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/be.png?raw=true"
+    },
+    {
+        "id": "02_GF",
+        "name": "Canada",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ca.png?raw=true"
+    },
+    {
+        "id": "03_GF",
+        "name": "Marruecos",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ma.png?raw=true"
+    },
+    {
+        "id": "04_GF",
+        "name": "Croacia",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/hr.png?raw=true"
+    },
+    {
+        "id": "01_GG",
+        "name": "Brasil",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/br.png?raw=true"
+    },
+    {
+        "id": "02_GG",
+        "name": "Serbia",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/rs.png?raw=true"
+    },
+    {
+        "id": "03_GG",
+        "name": "Suiza",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/ch.png?raw=true"
+    },
+    {
+        "id": "04_GG",
+        "name": "Camerun",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/cm.png?raw=true"
+    },
+    {
+        "id": "01_GH",
+        "name": "Portugal",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/pt.png?raw=true"
+    },
+    {
+        "id": "02_GH",
+        "name": "Ghana",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/gh.png?raw=true"
+    },
+    {
+        "id": "03_GH",
+        "name": "Uruguay",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/uy.png?raw=true"
+    },
+    {
+        "id": "04_GH",
+        "name": "Corea.S",
+        "bandera": "https://github.com/hampusborgos/country-flags/blob/main/png250px/kr.png?raw=true"
+    }
+]
