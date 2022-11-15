@@ -8,7 +8,7 @@ import { paises } from "../data/data";
 const Enfrentamiento = memo(({ horario, local, visitante, matchId, getMatchPrediction }) => {
   const [teamNames, setTeamNames] = useState({});
   const [loading, setLoading] = useState(true);
-
+  // CREAR COMPONENTE CONTAINER PARA EXTRAER LA LOGICA DEL SET EQUIPOS!!! !!! !!! !! !!
   useEffect(() => {
     getEquipos(local, visitante);
     setLoading(false);
@@ -26,14 +26,8 @@ const Enfrentamiento = memo(({ horario, local, visitante, matchId, getMatchPredi
     getMatchPrediction(matchPrediction);
   };
 
-  return loading ? (
-    <Text> cargando...</Text>
-  ) : (
-    <Stack
-      direction={{ base: "column", md: "row" }}
-      justifyContent={{ base: "center" }}
-      alignItems={{ base: "start", md: "center" }}
-    >
+  return (
+    <Stack direction={{ base: "column", md: "row" }} justifyContent={{ base: "center" }} alignItems={{ base: "start", md: "center" }}>
       <Box p={2}>
         <Text fontSize={30}>{horario}</Text>
       </Box>
@@ -44,11 +38,7 @@ const Enfrentamiento = memo(({ horario, local, visitante, matchId, getMatchPredi
         justifyContent={{ base: undefined, md: "center" }}
         gap={{ base: 5, md: 10 }}
       >
-        <Stack
-          alignItems={{ base: "center" }}
-          direction={{ base: "row-reverse", md: "row" }}
-          textAlign={{ base: "start", md: "end" }}
-        >
+        <Stack alignItems={{ base: "center" }} direction={{ base: "row-reverse", md: "row" }} textAlign={{ base: "start", md: "end" }}>
           <EquipoBox equipo={teamNames.equipoLocal?.name} />
           <Bandera imgUrl={teamNames.equipoLocal?.bandera} />
         </Stack>

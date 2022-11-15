@@ -1,27 +1,16 @@
 import React, { useState } from "react";
-import {
-  IconButton,
-  Box,
-  CloseButton,
-  Flex,
-  Icon,
-  useColorModeValue,
-  Link,
-  Drawer,
-  DrawerContent,
-  Text,
-  useDisclosure,
-} from "@chakra-ui/react";
+import { IconButton, Box, CloseButton, Flex, Icon, useColorModeValue, Link, Drawer, DrawerContent, Text, useDisclosure } from "@chakra-ui/react";
 import { FiHome, FiTrendingUp, FiCompass, FiStar, FiSettings, FiMenu } from "react-icons/fi";
 
 import Fecha from "../components/prode/Fecha";
+import { Outlet, Link as ReactRouterLink } from "react-router-dom";
 
 const LinkItems = [
-  { id: "grupos", name: "Grupos", icon: FiHome },
-  { id: "8vos", name: "Octavos de final", icon: FiTrendingUp },
-  { id: "4tos", name: "Cuartos de final", icon: FiCompass },
-  { id: "semi", name: "Semifinales", icon: FiStar },
-  { id: "final", name: "Final", icon: FiSettings },
+  { id: "grupos", name: "Grupos", icon: FiHome, path: "grupos" },
+  { id: "8vos", name: "Octavos de final", icon: FiTrendingUp, path: "octavos" },
+  { id: "4tos", name: "Cuartos de final", icon: FiCompass, path: "cuartos" },
+  { id: "semi", name: "Semifinales", icon: FiStar, path: "semifinal" },
+  { id: "final", name: "Final", icon: FiSettings, path: "final" },
 ];
 
 export default function Prode({ children }) {
@@ -35,15 +24,7 @@ export default function Prode({ children }) {
   return (
     <Box minH="100vh" bg={useColorModeValue("gray.100", "gray.900")}>
       <SidebarContent onClose={() => onClose} display={{ base: "none", md: "block" }} />
-      <Drawer
-        autoFocus={false}
-        isOpen={isOpen}
-        placement="left"
-        onClose={onClose}
-        returnFocusOnClose={false}
-        onOverlayClick={onClose}
-        size="full"
-      >
+      <Drawer autoFocus={false} isOpen={isOpen} placement="left" onClose={onClose} returnFocusOnClose={false} onOverlayClick={onClose} size="full">
         <DrawerContent>
           <SidebarContent onClose={onClose} />
         </DrawerContent>
@@ -51,7 +32,7 @@ export default function Prode({ children }) {
       {/* mobilenav */}
       <MobileNav display={{ base: "flex", md: "none" }} onOpen={onOpen} />
       <Box ml={{ base: 0, md: 60 }} p="4">
-        <Fecha />
+        <Outlet />
       </Box>
     </Box>
   );
@@ -75,7 +56,7 @@ const SidebarContent = ({ onClose, ...rest }) => {
         <CloseButton display={{ base: "flex", md: "none" }} onClick={onClose} />
       </Flex>
       {LinkItems.map((link) => (
-        <NavItem key={link.name} icon={link.icon}>
+        <NavItem key={link.name} icon={link.icon} path={link.path}>
           {link.name}
         </NavItem>
       ))}
@@ -83,9 +64,9 @@ const SidebarContent = ({ onClose, ...rest }) => {
   );
 };
 
-const NavItem = ({ icon, children, ...rest }) => {
+const NavItem = ({ icon, children, path }) => {
   return (
-    <Link href="#" style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }}>
+    <Link to={path} style={{ textDecoration: "none" }} _focus={{ boxShadow: "none" }} as={ReactRouterLink}>
       <Flex
         align="center"
         p="4"
@@ -97,7 +78,6 @@ const NavItem = ({ icon, children, ...rest }) => {
           bg: "cyan.400",
           color: "white",
         }}
-        {...rest}
       >
         {icon && (
           <Icon
