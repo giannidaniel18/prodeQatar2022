@@ -160,7 +160,6 @@ export const paises = [
     bandera: "https://github.com/hampusborgos/country-flags/blob/main/png250px/kr.png?raw=true",
   },
 ];
-
 export const instancias = [
   {
     id: "grupos",
@@ -175,7 +174,7 @@ export const instancias = [
             id: "p1A",
             local: "01_GA",
             visitante: "02_GA",
-            resultado: "vistante",
+            resultado: "",
           },
           {
             fecha: "21/11/2022",
@@ -607,14 +606,17 @@ export const instancias = [
   { id: "semifinal", enfrentamientos: [] },
   { id: "final", enfrentamientos: [] },
 ];
-
-export const predicciones = [
-  {
-    userID: "dani",
-    predicciones: [
-      { partido: "p1A", resultado: "visitante" },
-      { partido: "p2A", resultado: "visitante" },
-      { partido: "p3A", resultado: "visitante" },
-    ],
-  },
-];
+export const predicciones = {
+  userID: "dani",
+  predicciones: [
+    { partido: "p1A", resultado: "visitante" },
+    { partido: "p2A", resultado: "empate" },
+    { partido: "p3A", resultado: "local" },
+    { partido: "p1B", resultado: "local" },
+    { partido: "p2B", resultado: "empate" },
+    { partido: "p3B", resultado: "visitante" },
+    { partido: "p5B", resultado: "visitante" },
+    { partido: "p4B", resultado: "visitante" },
+  ],
+};
+export const resultadosByUsers = [{ idUser: "dani", puntos: "20" }];

@@ -1,9 +1,13 @@
 import { Button, FormControl, Radio, RadioGroup, Stack, Text } from "@chakra-ui/react";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import ButtonPicker from "./ButtonPicker";
 
-export default function ResultPicker({ predictionFunction }) {
-  const [selection, setSelection] = useState(null);
+export default function ResultPicker({ predictionFunction, prediction = null }) {
+  const [selection, setSelection] = useState(prediction);
+
+  useEffect(() => {
+    setSelection(prediction);
+  }, [prediction]);
 
   const handleChange = (valor) => {
     setSelection(valor);
